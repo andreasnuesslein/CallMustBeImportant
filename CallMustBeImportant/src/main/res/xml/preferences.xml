@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+            android:key="service_activated"
+            android:title="@string/service_activated"
+            android:summaryOff="@string/service_activated_summ_off"
+            android:summaryOn="@string/service_activated_summ_on"
+            android:defaultValue="true"/>
+
+    <de.noova.callmustbeimportant.MyListPreference
+            android:dependency="service_activated"
+            android:key="timeout_between_calls"
+            android:title="@string/timeout"
+            android:summary="@string/timeout_summ"
+            android:dialogTitle="@string/pref_timeout"
+            android:entries="@array/pref_timeout_entries"
+            android:entryValues="@array/pref_timeout_entries"
+            android:defaultValue="3"/>
+
+    <de.noova.callmustbeimportant.MyListPreference
+            android:dependency="service_activated"
+            android:key="escalate_1"
+            android:title="@string/escalate_1"
+            android:summary="@string/escalate_1_summ"
+            android:dialogTitle="@string/escalate_1_dialog"
+            android:entries="@array/pref_escalate_1_entries"
+            android:entryValues="@array/pref_escalate_1_entries"
+            android:defaultValue="1"/>
+
+    <de.noova.callmustbeimportant.MyListPreference
+            android:dependency="service_activated"
+            android:key="escalate_2"
+            android:title="@string/escalate_2"
+            android:summary="@string/escalate_2_summ"
+            android:dialogTitle="@string/escalate_2_dialog"
+            android:entries="@array/pref_escalate_2_entries"
+            android:entryValues="@array/pref_escalate_2_entries"
+            android:defaultValue="2"/>
+</PreferenceScreen>

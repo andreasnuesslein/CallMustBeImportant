@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CallMustBeImportant</string>
+    <string name="title_activity_main">Call Must Be Important</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">This app will automatically turn your phone\'s volume up, if a person
+        persistently tries to reach you.
+    </string>
+    <string name="service_activated">Service active</string>
+    <string name="service_activated_summ_off">Service is not running</string>
+    <string name="service_activated_summ_on">Service is running</string>
+    <string name="pref_timeout">Within how many minutes does somebody have to call?</string>
+    <string name="pref_timeout_default">3</string>
+    <string name="timeout">Timeout between calls</string>
+    <string name="timeout_summ">A person has to call within %s min.</string>
+    <string name="escalate_1_summ">The same person will have to try to reach you %s times before
+        raising the volume
+    </string>
+    <string name="escalate_2_summ">The same person will have to try to reach you %s times before max
+        volume
+    </string>
+    <string name="escalate_1">Escalate 1</string>
+    <string name="escalate_2">Escalate 2</string>
+    <string name="escalate_1_dialog">Escalate 1</string>
+    <string name="escalate_2_dialog">Escalate 2</string>
+</resources>
